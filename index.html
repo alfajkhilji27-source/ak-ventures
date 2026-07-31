@@ -1,35 +1,88 @@
-AK Ventures
-Home About Services Foundation Contact
-AK Ventures
+from textwrap import dedent
 
-Building Wealth. Creating Impact.
+html = dedent("""\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK Ventures | Building Wealth. Creating Impact.</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-A premium business platform connecting finance, investments, real estate, healthcare, partnerships and future social impact.
+<header class="navbar">
+  <div class="logo">AK <span>Ventures</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#foundation">Foundation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-Explore Ventures Contact Me
-Welcome to AK Ventures
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>AK Ventures</h1>
+    <h2>Building Wealth. Creating Impact.</h2>
+    <p>A premium business platform connecting finance, investments, real estate, healthcare, partnerships and future social impact.</p>
+    <div class="buttons">
+      <a href="#services" class="btn gold">Explore Ventures</a>
+      <a href="#contact" class="btn white">Contact Me</a>
+    </div>
+  </div>
+</section>
 
-AK Ventures is a long-term vision focused on knowledge, growth, partnerships and value creation. This website will serve as the central hub for business collaborations, financial education, investment opportunities, real estate, healthcare services and future charitable initiatives.
+<section id="about">
+  <div class="container">
+    <h2>Welcome to AK Ventures</h2>
+    <p>AK Ventures is a long-term vision focused on knowledge, growth, partnerships and value creation. This website will serve as the central hub for business collaborations, financial education, investment opportunities, real estate, healthcare services and future charitable initiatives.</p>
+  </div>
+</section>
 
-Our Services
+<section id="services">
+<div class="container">
+<h2>Our Services</h2>
+<ul>
+<li>Financial Knowledge</li>
+<li>Investment Management</li>
+<li>Business Partnerships</li>
+<li>Real Estate</li>
+<li>Rental Solutions</li>
+<li>Medical & Healthcare</li>
+<li>Brand Collaborations</li>
+</ul>
+</div>
+</section>
 
-Financial Knowledge
-Investment Management
-Business Partnerships
-Real Estate
-Rental Solutions
-Medical & Healthcare
-Brand Collaborations
-AK Foundation
+<section id="foundation">
+<div class="container">
+<h2>AK Foundation</h2>
+<p><strong>Coming Soon.</strong> A future initiative dedicated to education, healthcare and community support.</p>
+</div>
+</section>
 
-Coming Soon. A future initiative dedicated to education, healthcare and community support.
+<section id="contact">
+<div class="container">
+<h2>Contact</h2>
+<p>Email: your@email.com</p>
+<p>Instagram: @yourusername</p>
+<p>WhatsApp: +91-XXXXXXXXXX</p>
+</div>
+</section>
 
-Contact
+<footer>
+<p>© 2026 AK Ventures. All Rights Reserved.</p>
+</footer>
 
-Email: your@email.com
+<script src="script.js"></script>
+</body>
+</html>
+""")
 
-Instagram: @yourusername
-
-WhatsApp: +91-XXXXXXXXXX
-
-© 2026 AK Ventures. All Rights Reserved.
+path="/mnt/data/index.html"
+with open(path,"w",encoding="utf-8") as f:
+    f.write(html)
+print(path)
