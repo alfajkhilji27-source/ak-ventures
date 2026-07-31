@@ -1241,5 +1241,125 @@ nav a:hover::after{
 width:100%;
 
 }
+/* ===============================
+HERO BUSINESS CARD
+================================*/
 
+.hero-badge{
+
+margin-top:70px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.badge-card{
+
+width:700px;
+
+max-width:95%;
+
+padding:35px;
+
+border-radius:28px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.10);
+
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.badge-card h3{
+
+font-size:34px;
+
+color:#d4af37;
+
+margin-bottom:10px;
+
+}
+
+.badge-card p{
+
+color:#ddd;
+
+margin-bottom:30px;
+
+}
+
+.badge-stats{
+
+display:flex;
+
+justify-content:space-between;
+
+flex-wrap:wrap;
+
+gap:25px;
+
+}
+
+.badge-stats div{
+
+flex:1;
+
+min-width:140px;
+
+padding:20px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.04);
+
+}
+
+.badge-stats h4{
+
+color:#fff;
+
+font-size:22px;
+
+margin-bottom:8px;
+
+}
+
+.badge-stats span{
+
+color:#d4af37;
+
+}
+
+.scroll-down{
+
+margin-top:40px;
+
+font-size:34px;
+
+color:#d4af37;
+
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(10px);
+
+}
+
+}
 
