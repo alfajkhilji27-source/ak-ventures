@@ -345,3 +345,98 @@ line-height:1.9;
 color:#ddd;
 
 }
+/* ================= INVESTMENT MANAGEMENT ================= */
+
+.investment{
+
+padding:120px 10%;
+
+background:linear-gradient(135deg,#03142b,#000814,#021326);
+
+}
+
+.investment-heading{
+
+max-width:950px;
+
+margin:auto;
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.investment-heading h2{
+
+font-size:50px;
+
+color:#4da6ff;
+
+margin-bottom:25px;
+
+}
+
+.investment-heading p{
+
+font-size:20px;
+
+line-height:2;
+
+color:#ddd;
+
+}
+
+.investment-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.investment-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border-radius:20px;
+
+padding:35px;
+
+transition:.4s;
+
+}
+
+.investment-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 25px 45px rgba(77,166,255,.30);
+
+border-color:#4da6ff;
+
+}
+
+.investment-card h3{
+
+font-size:28px;
+
+color:#4da6ff;
+
+margin-bottom:20px;
+
+}
+
+.investment-card p{
+
+line-height:1.9;
+
+color:#ddd;
+
+}
