@@ -1192,3 +1192,54 @@ background:linear-gradient(90deg,#d4af37,#3b82f6,#22c55e);
 z-index:999999;
 
 }
+/* ===== PREMIUM NAVBAR ===== */
+
+.navbar{
+
+transition:.4s;
+
+}
+
+.navbar.scrolled{
+
+padding:12px 7%;
+
+background:rgba(0,0,0,.92);
+
+box-shadow:0 10px 40px rgba(0,0,0,.4);
+
+}
+
+nav a{
+
+position:relative;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:0%;
+
+height:2px;
+
+background:#d4af37;
+
+transition:.35s;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+
