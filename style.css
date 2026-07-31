@@ -144,3 +144,23 @@ font-size:17px;
 }
 
 }
+.vision{
+background:#111;
+padding:100px 10%;
+}
+
+.vision h2{
+font-size:48px;
+text-align:center;
+color:#d4af37;
+margin-bottom:40px;
+}
+
+.vision p{
+font-size:19px;
+line-height:2;
+max-width:1000px;
+margin:25px auto;
+text-align:center;
+color:#ddd;
+}
