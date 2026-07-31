@@ -452,3 +452,68 @@ line-height:1.9;
 color:#d5d5d5;
 
 }
+/* ===== PREMIUM SECTION DESIGN ===== */
+
+.luxury-section{
+padding:120px 8%;
+position:relative;
+overflow:hidden;
+}
+
+.luxury-section::before{
+content:"";
+position:absolute;
+top:-150px;
+right:-120px;
+width:420px;
+height:420px;
+background:radial-gradient(circle,#d4af3720,transparent 70%);
+filter:blur(60px);
+}
+
+.luxury-section.dark{
+background:#050505;
+}
+
+.luxury-section.blue{
+background:linear-gradient(135deg,#061325,#050505);
+}
+
+.luxury-section.green{
+background:linear-gradient(135deg,#04150b,#050505);
+}
+
+.luxury-section.white{
+background:linear-gradient(135deg,#111,#050505);
+}
+
+.luxury-title{
+font-size:56px;
+font-weight:700;
+margin-bottom:12px;
+color:#fff;
+}
+
+.luxury-title span{
+display:block;
+font-size:16px;
+letter-spacing:6px;
+color:#d4af37;
+margin-bottom:12px;
+text-transform:uppercase;
+}
+
+.luxury-line{
+width:120px;
+height:4px;
+background:#d4af37;
+margin:25px 0 35px;
+border-radius:50px;
+}
+
+.luxury-text{
+font-size:18px;
+line-height:2;
+color:#d8d8d8;
+max-width:850px;
+}
