@@ -18,12 +18,12 @@ const observer=new IntersectionObserver((entries)=>{
      entry.target.style.transform="translateY(0)";
    }
  });
-},{threshold:0.15});
+},{threshold:0.02});
 
 document.querySelectorAll("section").forEach(sec=>{
  sec.style.opacity="0";
  sec.style.transform="translateY(40px)";
- sec.style.transition="all .8s ease";
+ sec.style.transition="all .45s ease";
  observer.observe(sec);
 });
 
