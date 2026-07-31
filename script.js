@@ -68,3 +68,22 @@ const progress=(scrollTop/height)*100;
 document.getElementById("progress-bar").style.width=progress+"%";
 
 });
+/* Navbar Scroll Effect */
+
+window.addEventListener("scroll",function(){
+
+const nav=document.querySelector(".navbar");
+
+if(window.scrollY>60){
+
+nav.classList.add("scrolled");
+
+}
+
+else{
+
+nav.classList.remove("scrolled");
+
+}
+
+});
