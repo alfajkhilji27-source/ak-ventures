@@ -1115,4 +1115,80 @@ text-align:center;
 }
 
 }
+/* ==============================
+   FLOATING BUTTONS
+============================== */
 
+.floating-whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+background:#25D366;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+color:white;
+
+z-index:99999;
+
+box-shadow:0 10px 35px rgba(37,211,102,.45);
+
+transition:.35s;
+
+animation:float 3s infinite;
+
+}
+
+.floating-whatsapp:hover{
+
+transform:scale(1.12);
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(0px);}
+
+50%{transform:translateY(-10px);}
+
+100%{transform:translateY(0px);}
+
+}
+
+/* ========================= */
+
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:0%;
+
+height:4px;
+
+background:linear-gradient(90deg,#d4af37,#3b82f6,#22c55e);
+
+z-index:999999;
+
+}
