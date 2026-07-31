@@ -1,28 +1,146 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#000;
-    color:#fff;
-    font-family:Arial, Helvetica, sans-serif;
-    overflow-x:hidden;
+font-family:'Poppins',sans-serif;
+background:#000;
+color:#fff;
+overflow-x:hidden;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(15px);
+z-index:999;
 }
 
-section{
-    padding:100px 10%;
+.logo{
+font-size:30px;
+font-weight:700;
+color:#fff;
 }
 
-.container{
-    width:100%;
-    max-width:1400px;
-    margin:auto;
+.logo span{
+color:#d4af37;
+}
+
+nav a{
+margin-left:25px;
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:900px;
+padding:20px;
+z-index:2;
+}
+
+.hero h1{
+font-size:70px;
+margin-bottom:15px;
+}
+
+.hero h2{
+font-size:34px;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.8;
+opacity:.9;
+margin-bottom:40px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 36px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.35s;
+}
+
+.gold{
+background:#d4af37;
+color:#000;
+}
+
+.gold:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 30px rgba(212,175,55,.45);
+}
+
+.white{
+border:2px solid white;
+color:white;
+}
+
+.white:hover{
+background:white;
+color:black;
+}
+
+@media(max-width:768px){
+
+.navbar{
+padding:18px 5%;
+}
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.hero h2{
+font-size:24px;
+}
+
+.hero p{
+font-size:17px;
+}
+
 }
