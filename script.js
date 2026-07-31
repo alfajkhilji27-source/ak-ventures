@@ -1,0 +1,1 @@
+console.log("AK Ventures v1.1 Loaded Successfully");
