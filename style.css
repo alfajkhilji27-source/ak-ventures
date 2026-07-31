@@ -164,3 +164,91 @@ margin:25px auto;
 text-align:center;
 color:#ddd;
 }
+/* WHO WE ARE */
+
+.about-company{
+padding:120px 10%;
+background:#0d0d0d;
+color:#fff;
+}
+
+.about-company h2{
+text-align:center;
+font-size:48px;
+margin-bottom:30px;
+color:#d4af37;
+}
+
+.about-company p{
+max-width:1000px;
+margin:25px auto;
+font-size:20px;
+line-height:2;
+text-align:center;
+color:#ddd;
+}
+
+/* VISION */
+
+.vision-section{
+padding:120px 10%;
+background:#07131f;
+}
+
+.vision-section h2{
+text-align:center;
+font-size:48px;
+color:#4da6ff;
+margin-bottom:30px;
+}
+
+.vision-section p{
+max-width:1000px;
+margin:auto;
+font-size:20px;
+line-height:2;
+text-align:center;
+color:#ddd;
+}
+
+/* VALUES */
+
+.values{
+padding:120px 10%;
+background:#111;
+}
+
+.values h2{
+text-align:center;
+font-size:48px;
+margin-bottom:60px;
+color:#d4af37;
+}
+
+.value-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.value-card{
+background:#1b1b1b;
+padding:35px;
+border-radius:18px;
+transition:.4s;
+}
+
+.value-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(212,175,55,.25);
+}
+
+.value-card h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.value-card p{
+line-height:1.8;
+color:#ccc;
+}
