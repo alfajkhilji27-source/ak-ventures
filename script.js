@@ -135,32 +135,3 @@ section.classList.add("active");
 window.addEventListener("scroll",revealSections);
 
 revealSections();
-new TradingView.MiniWidget({
-container_id:"nifty",
-symbol:"NSE:NIFTY",
-width:"100%",
-height:260,
-theme:"dark",
-style:"1",
-locale:"en"
-});
-
-new TradingView.MiniWidget({
-container_id:"sensex",
-symbol:"BSE:SENSEX",
-width:"100%",
-height:260,
-theme:"dark",
-style:"1",
-locale:"en"
-});
-
-new TradingView.MiniWidget({
-container_id:"nasdaq",
-symbol:"NASDAQ:IXIC",
-width:"100%",
-height:260,
-theme:"dark",
-style:"1",
-locale:"en"
-});
