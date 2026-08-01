@@ -1751,3 +1751,25 @@ background:#000;
 border-top:1px solid rgba(212,175,55,.25);
 border-bottom:1px solid rgba(212,175,55,.25);
 }
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2200&q=80");
+background-size:cover;
+background-position:center;
+animation:zoomHero 20s ease-in-out infinite alternate;
+z-index:-3;
+}
+
+@keyframes zoomHero{
+from{transform:scale(1);}
+to{transform:scale(1.08);}
+}
