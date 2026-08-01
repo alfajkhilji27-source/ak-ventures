@@ -1589,3 +1589,20 @@ opacity:1;
 transform:translateY(0);
 
 }
+/* ==========================
+FINANCE BACKGROUND
+========================== */
+
+#finance{
+
+background:
+linear-gradient(rgba(5,8,15,.82),rgba(5,8,15,.88)),
+url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2200&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
+}
