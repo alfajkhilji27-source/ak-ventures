@@ -1773,3 +1773,70 @@ z-index:-3;
 from{transform:scale(1);}
 to{transform:scale(1.08);}
 }
+.market-animation{
+position:absolute;
+inset:0;
+overflow:hidden;
+pointer-events:none;
+z-index:-2;
+}
+
+.market-animation svg{
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:100%;
+opacity:.18;
+}
+
+.market-animation path{
+fill:none;
+stroke:#d4af37;
+stroke-width:4;
+stroke-linecap:round;
+stroke-linejoin:round;
+stroke-dasharray:1800;
+stroke-dashoffset:1800;
+animation:marketMove 8s linear infinite;
+filter:drop-shadow(0 0 12px #d4af37);
+}
+
+@keyframes marketMove{
+0%{
+stroke-dashoffset:1800;
+}
+100%{
+stroke-dashoffset:0;
+}
+}
+
+.market-animation span{
+position:absolute;
+width:6px;
+height:6px;
+background:#d4af37;
+border-radius:50%;
+box-shadow:0 0 20px #d4af37;
+animation:particle 12s linear infinite;
+}
+
+.market-animation span:nth-child(1){left:10%;animation-delay:0s;}
+.market-animation span:nth-child(2){left:30%;animation-delay:2s;}
+.market-animation span:nth-child(3){left:50%;animation-delay:4s;}
+.market-animation span:nth-child(4){left:70%;animation-delay:6s;}
+.market-animation span:nth-child(5){left:90%;animation-delay:8s;}
+
+@keyframes particle{
+0%{
+transform:translateY(120vh);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-20vh);
+opacity:0;
+}
+}
