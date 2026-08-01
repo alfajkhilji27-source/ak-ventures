@@ -1239,13 +1239,11 @@ HERO BUSINESS CARD
 ================================*/
 
 .hero-badge{
-
-margin-top:70px;
-
+margin-top:35px;
 display:flex;
-
 justify-content:center;
-
+width:100%;
+padding:0 20px;
 }
 
 .badge-card{
