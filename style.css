@@ -1264,7 +1264,19 @@ backdrop-filter:blur(18px);
 border:1px solid rgba(255,255,255,.12);
 
 }
+.badge-card:hover{
 
+transform:translateY(-8px);
+
+box-shadow:
+0 25px 70px rgba(0,0,0,.55),
+0 0 40px rgba(212,175,55,.18);
+
+border:1px solid rgba(212,175,55,.35);
+
+transition:.4s;
+
+}
 .badge-card h3{
 
 font-size:34px;
