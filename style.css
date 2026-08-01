@@ -1462,3 +1462,79 @@ flex-direction:column;
 }
 
 }
+/* ==========================
+MOBILE MENU
+========================== */
+
+.menu-toggle{
+
+display:none;
+
+font-size:34px;
+
+cursor:pointer;
+
+color:#d4af37;
+
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.navbar{
+
+padding:18px 20px;
+
+flex-direction:row;
+
+justify-content:space-between;
+
+}
+
+#nav-menu{
+
+position:fixed;
+
+top:78px;
+
+left:-100%;
+
+width:260px;
+
+height:100vh;
+
+background:#050505;
+
+display:flex;
+
+flex-direction:column;
+
+padding:40px 25px;
+
+gap:25px;
+
+transition:.35s;
+
+border-right:1px solid rgba(255,255,255,.08);
+
+}
+
+#nav-menu.active{
+
+left:0;
+
+}
+
+#nav-menu a{
+
+font-size:20px;
+
+}
+
+}
+
