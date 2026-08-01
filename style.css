@@ -1611,17 +1611,12 @@ MEDICAL BACKGROUND
 ========================== */
 
 #medical{
-
 background:
-linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.88)),
-url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=2200&q=80");
-
+linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.88)),
+url("https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg");
 background-size:cover;
-
 background-position:center;
-
-background-attachment:fixed;
-
+background-repeat:no-repeat;
 }
 /* ==========================
 REAL ESTATE
