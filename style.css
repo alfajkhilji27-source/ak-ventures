@@ -207,15 +207,21 @@ transition:.35s;
 
 .gold{
 
-background:#d4af37;
+background:linear-gradient(135deg,#e8c766,#c89b1d);
 
-color:black;
+color:#111;
+
+box-shadow:0 15px 40px rgba(212,175,55,.35);
+
+transition:.35s;
 
 }
 
 .gold:hover{
 
-transform:translateY(-5px);
+transform:translateY(-4px);
+
+box-shadow:0 22px 50px rgba(212,175,55,.55);
 
 }
 
