@@ -1743,4 +1743,11 @@ transform:translateX(-50%);
 }
 
 }
-
+.ticker-container{
+width:100%;
+margin:0;
+padding:0;
+background:#000;
+border-top:1px solid rgba(212,175,55,.25);
+border-bottom:1px solid rgba(212,175,55,.25);
+}
