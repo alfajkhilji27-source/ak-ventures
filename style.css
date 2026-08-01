@@ -1248,21 +1248,18 @@ padding:0 20px;
 
 .badge-card{
 
-width:700px;
+width:100%;
+max-width:900px;
 
-max-width:95%;
-
-padding:35px;
+padding:30px;
 
 border-radius:28px;
 
-background:rgba(255,255,255,.05);
+background:rgba(20,20,20,.45);
 
 backdrop-filter:blur(18px);
 
-border:1px solid rgba(255,255,255,.10);
-
-box-shadow:0 20px 60px rgba(0,0,0,.45);
+border:1px solid rgba(255,255,255,.12);
 
 }
 
