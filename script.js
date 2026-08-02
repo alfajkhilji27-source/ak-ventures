@@ -148,7 +148,7 @@ this.parentElement.classList.toggle("active");
    AK AI Assistant
 ===================================== */
 
-const aiBtn = document.getElementById("aiBtn");
+const aiBtn = document.getElementById("openAI");
 const aiChat = document.getElementById("aiChat");
 const closeAI = document.getElementById("closeAI");
 const sendBtn = document.getElementById("sendBtn");
