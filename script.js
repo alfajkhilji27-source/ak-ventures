@@ -135,3 +135,12 @@ section.classList.add("active");
 window.addEventListener("scroll",revealSections);
 
 revealSections();
+document.querySelectorAll(".faq-question").forEach(btn=>{
+
+btn.onclick=function(){
+
+this.parentElement.classList.toggle("active");
+
+}
+
+});
