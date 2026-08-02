@@ -1848,10 +1848,13 @@ max-width:1100px;
 margin:60px auto 0;
 }
 
-.world-map img{
+.world-image{
 width:100%;
-opacity:.28;
-filter:brightness(1.2);
+display:block;
+opacity:.95;
+filter:brightness(1.15) contrast(1.15);
+user-select:none;
+pointer-events:none;
 }
 
 .pin{
