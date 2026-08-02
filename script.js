@@ -210,47 +210,44 @@ keywords:["thank","thanks"],
 reply:"😊 You're welcome! I'm always here to help."
 }
 ];
-if(text.includes("finance") || text.includes("investment")){
 
-msg="📈 AK Ventures provides financial education, investment awareness and long-term wealth building strategies.";
 
-}
+let msg = "";
+let found = false;
 
-else if(text.includes("health") || text.includes("medical")){
+for (const item of knowledge) {
 
-msg="🏥 Our healthcare division focuses on trusted guidance and pharmaceutical experience.";
+    for (const key of item.keywords) {
 
-}
+        if (text.includes(key)) {
 
-else if(text.includes("real")){
+            msg = item.reply;
+            found = true;
+            break;
 
-msg="🏢 We help with property consultation, investment opportunities and rental solutions.";
+        }
 
-}
+    }
 
-else if(text.includes("contact")){
-
-msg=`📞 WhatsApp: +91 9530106832<br>
-📧 Email: alfajkhilji27@gmail.com<br>
-📷 Instagram: @alfaj__ak`;
+    if (found) break;
 
 }
 
-else if(text.includes("faq")){
+if (!found) {
 
-msg="❓You can ask me anything about AK Ventures, Finance, Healthcare, Real Estate or Business.";
+msg = `🤖 Sorry, I couldn't find an exact answer.
 
-}
+You can ask me about:
 
-else if(text.includes("partnership")){
+📈 Finance
+🏥 Healthcare
+🏢 Real Estate
+🤝 Business
+💼 Investments
+📞 Contact
+❓ AK Ventures
 
-msg="🤝 AK Ventures welcomes startups, investors and businesses for strategic partnerships.";
-
-}
-
-else{
-
-msg="🤖 Sorry, I'm still learning. Soon I'll become a real AI Assistant powered by AI.";
+I'm learning every day to serve you better.`;
 
 }
 
