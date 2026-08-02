@@ -144,3 +144,124 @@ this.parentElement.classList.toggle("active");
 }
 
 });
+/* =====================================
+   AK AI Assistant
+===================================== */
+
+const aiBtn = document.getElementById("aiBtn");
+const aiChat = document.getElementById("aiChat");
+const closeAI = document.getElementById("closeAI");
+const sendBtn = document.getElementById("sendBtn");
+const userInput = document.getElementById("userInput");
+const chatBody = document.getElementById("chatBody");
+const quickBtns = document.querySelectorAll(".quick-btn");
+
+aiBtn.onclick = () => {
+    aiChat.style.display = "flex";
+};
+
+closeAI.onclick = () => {
+    aiChat.style.display = "none";
+};
+
+function botReply(text){
+
+let msg = "";
+
+text = text.toLowerCase();
+
+if(text.includes("finance") || text.includes("investment")){
+
+msg="📈 AK Ventures provides financial education, investment awareness and long-term wealth building strategies.";
+
+}
+
+else if(text.includes("health") || text.includes("medical")){
+
+msg="🏥 Our healthcare division focuses on trusted guidance and pharmaceutical experience.";
+
+}
+
+else if(text.includes("real")){
+
+msg="🏢 We help with property consultation, investment opportunities and rental solutions.";
+
+}
+
+else if(text.includes("contact")){
+
+msg=`📞 WhatsApp: +91 9530106832<br>
+📧 Email: alfajkhilji27@gmail.com<br>
+📷 Instagram: @alfaj__ak`;
+
+}
+
+else if(text.includes("faq")){
+
+msg="❓You can ask me anything about AK Ventures, Finance, Healthcare, Real Estate or Business.";
+
+}
+
+else if(text.includes("partnership")){
+
+msg="🤝 AK Ventures welcomes startups, investors and businesses for strategic partnerships.";
+
+}
+
+else{
+
+msg="🤖 Sorry, I'm still learning. Soon I'll become a real AI Assistant powered by AI.";
+
+}
+
+chatBody.innerHTML += `
+<div style="text-align:right;margin:15px 0;">
+<div style="display:inline-block;background:#b00000;color:white;padding:12px 18px;border-radius:18px;max-width:80%;">
+${text}
+</div>
+</div>
+`;
+
+setTimeout(()=>{
+
+chatBody.innerHTML += `
+<div class="bot-message">
+${msg}
+</div>
+`;
+
+chatBody.scrollTop = chatBody.scrollHeight;
+
+},600);
+
+}
+
+sendBtn.onclick=()=>{
+
+if(userInput.value.trim()=="") return;
+
+botReply(userInput.value);
+
+userInput.value="";
+
+};
+
+userInput.addEventListener("keypress",(e)=>{
+
+if(e.key==="Enter"){
+
+sendBtn.click();
+
+}
+
+});
+
+quickBtns.forEach(btn=>{
+
+btn.onclick=()=>{
+
+botReply(btn.innerText);
+
+};
+
+});
