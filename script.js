@@ -169,7 +169,47 @@ function botReply(text){
 let msg = "";
 
 text = text.toLowerCase();
+const knowledge = [
+{
+keywords:["hello","hi","hey","namaste","salam","assalamualaikum"],
+reply:"👋 Welcome to AK Ventures! I'm AK AI Assistant. I can help you with Finance, Healthcare, Business, Real Estate, Investment, Partnerships and more."
+},
 
+{
+keywords:["ak ventures","about","company","who are you"],
+reply:"🏢 AK Ventures is a diversified business initiative focused on Finance, Healthcare, Real Estate, Business Consulting and long-term innovation. Our mission is to build trusted solutions for people and businesses."
+},
+
+{
+keywords:["finance","investment","sip","mutual fund","stock","share market"],
+reply:"📈 AK Ventures provides educational guidance on investing, SIPs, mutual funds, stock markets and wealth creation. Investment decisions should always consider your financial goals and risk tolerance."
+},
+
+{
+keywords:["health","medical","medicine","doctor","healthcare"],
+reply:"🏥 We provide healthcare awareness and general medical information. For diagnosis or treatment, always consult a qualified healthcare professional."
+},
+
+{
+keywords:["real estate","property","plot","land","flat","house"],
+reply:"🏢 We assist with property guidance, investment awareness, rental solutions and real estate consultation."
+},
+
+{
+keywords:["contact","phone","whatsapp","email","instagram"],
+reply:"📞 WhatsApp: +91 9530106832<br>📧 Email: alfajkhilji27@gmail.com<br>📷 Instagram: @alfaj__ak"
+},
+
+{
+keywords:["partnership","collaboration","investor","startup"],
+reply:"🤝 AK Ventures welcomes strategic partnerships, startups and investors interested in long-term collaboration."
+},
+
+{
+keywords:["thank","thanks"],
+reply:"😊 You're welcome! I'm always here to help."
+}
+];
 if(text.includes("finance") || text.includes("investment")){
 
 msg="📈 AK Ventures provides financial education, investment awareness and long-term wealth building strategies.";
