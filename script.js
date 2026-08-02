@@ -211,8 +211,6 @@ reply:"😊 You're welcome! I'm always here to help."
 }
 ];
 
-
-let msg = "";
 let found = false;
 
 for (const item of knowledge) {
