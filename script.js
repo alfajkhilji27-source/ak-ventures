@@ -209,6 +209,40 @@ reply:"🤝 AK Ventures welcomes strategic partnerships, startups and investors 
 keywords:["thank","thanks"],
 reply:"😊 You're welcome! I'm always here to help."
 }
+,
+{
+keywords:[
+"who made you",
+"who created you",
+"who built you",
+"kisne banaya",
+"tumhe kisne banaya",
+"creator",
+"developer"
+],
+
+reply:`👨‍💻 I was created exclusively for AK Ventures.
+
+I was designed and developed by <b>Alfaj Khilji</b> to help visitors with finance, healthcare, business, real estate, investments and partnerships. 🚀`
+},
+
+{
+keywords:[
+"who is alfaj",
+"alfaj",
+"alfaj khilji",
+"founder",
+"owner",
+"ceo",
+"who is the founder",
+"ak ventures founder",
+"founder of ak ventures"
+],
+
+reply:`👤 <b>Alfaj Khilji</b> is the Founder of <b>AK Ventures</b>.
+
+His vision is to build a trusted business ecosystem focused on finance, healthcare, real estate, business partnerships and future social impact. 🚀`
+}
 ];
 
 let found = false;
