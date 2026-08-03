@@ -333,6 +333,15 @@ for (const item of knowledge) {
 
             msg = item.reply;
             found = true;
+            if (msg === "__CHECK_NAME__") {
+
+    const savedName = localStorage.getItem("akUserName");
+
+    msg = savedName
+        ? `😊 Your name is <b>${savedName}</b>. Nice to see you again!`
+        : "🙂 I don't know your name yet. You can tell me by saying 'My name is ...'";
+
+}
             break;
 
         }
