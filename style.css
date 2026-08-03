@@ -2372,3 +2372,71 @@ color:#ccc;
 line-height:1.8;
 
 }
+/* ==========================================
+   MEDICINE CATEGORIES
+========================================== */
+
+.medicine-section{
+
+padding:100px 8%;
+background:#090909;
+
+}
+
+.medicine-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:45px;
+
+}
+
+.medicine-card{
+
+background:#181818;
+padding:30px;
+border-radius:16px;
+text-align:center;
+font-size:22px;
+font-weight:600;
+color:#fff;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.medicine-card:hover{
+
+background:#c40000;
+transform:translateY(-8px);
+
+}
+
+/* CTA */
+
+.division-cta{
+
+padding:120px 8%;
+text-align:center;
+background:#050505;
+
+}
+
+.division-cta h2{
+
+color:#fff;
+font-size:42px;
+margin-bottom:20px;
+
+}
+
+.division-cta p{
+
+color:#bbb;
+font-size:18px;
+margin-bottom:35px;
+
+}
