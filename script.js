@@ -243,6 +243,54 @@ reply:`👤 <b>Alfaj Khilji</b> is the Founder of <b>AK Ventures</b>.
 
 His vision is to build a trusted business ecosystem focused on finance, healthcare, real estate, business partnerships and future social impact. 🚀`
 }
+,
+{
+keywords:[
+"your name",
+"what is your name",
+"who are you",
+"tum kaun ho",
+"tumhara naam",
+"name"
+],
+
+reply:`🤖 My name is <b>AK AI Assistant</b>.
+
+I'm the official virtual assistant of <b>AK Ventures</b>.
+
+I can help you with Finance, Healthcare, Real Estate, Business, Investments, Partnerships and general information about AK Ventures.
+
+How may I assist you today?`
+}
+,
+{
+keywords:[
+"what can you do",
+"help",
+"services",
+"how can you help",
+"kya kar sakte ho",
+"madad"
+],
+
+reply:`🚀 I can help you with:
+
+📈 Finance & Investments
+
+🏥 Healthcare Information
+
+🏢 Real Estate Guidance
+
+🤝 Business & Partnerships
+
+💼 Startup Ideas
+
+📞 Contact Information
+
+❓ AK Ventures FAQs
+
+Just ask your question and I'll do my best to help you.`
+}
 ];
 
 let found = false;
