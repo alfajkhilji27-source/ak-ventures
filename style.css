@@ -2440,3 +2440,54 @@ font-size:18px;
 margin-bottom:35px;
 
 }
+/* ==========================================
+   HEALTHCARE STATS
+========================================== */
+
+.health-stats{
+
+padding:100px 8%;
+background:#111;
+
+}
+
+.stats-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:50px;
+
+}
+
+.stat-box{
+
+background:#1b1b1b;
+padding:40px 20px;
+text-align:center;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.08);
+transition:.35s;
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-10px);
+border-color:#c40000;
+
+}
+
+.stat-box h3{
+
+font-size:46px;
+color:#ff2d2d;
+margin-bottom:12px;
+
+}
+
+.stat-box p{
+
+color:#ccc;
+
+}
