@@ -169,6 +169,25 @@ function botReply(text){
 let msg = "";
 
 text = text.toLowerCase();
+// Remember user's name
+if (
+    text.includes("my name is") ||
+    text.includes("i am") ||
+    text.includes("i'm") ||
+    text.includes("mera naam")
+) {
+
+    let name = text
+        .replace("my name is", "")
+        .replace("i am", "")
+        .replace("i'm", "")
+        .replace("mera naam", "")
+        .trim();
+
+    if (name.length > 1) {
+        localStorage.setItem("akUserName", name);
+    }
+}
 const knowledge = [
 {
 keywords:["hello","hi","hey","namaste","salam","assalamualaikum"],
@@ -290,6 +309,17 @@ reply:`🚀 I can help you with:
 ❓ AK Ventures FAQs
 
 Just ask your question and I'll do my best to help you.`
+}
+,
+{
+keywords:[
+"what's my name",
+"what is my name",
+"mera naam kya hai",
+"do you know my name"
+],
+
+reply:"__CHECK_NAME__"
 }
 ];
 
