@@ -2735,4 +2735,53 @@ margin:auto;
 line-height:1.8;
 
 }
+/* ==========================================
+   DIVISION BAR
+========================================== */
+
+.division-bar{
+
+position:sticky;
+top:0;
+z-index:1000;
+
+background:#111;
+
+border-top:1px solid rgba(255,255,255,.08);
+border-bottom:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+}
+
+.division-bar .container{
+
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+
+padding:18px;
+
+}
+
+.division-bar a{
+
+color:#fff;
+
+text-decoration:none;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+transition:.35s;
+
+}
+
+.division-bar a:hover{
+
+background:#c40000;
+
+}
 
