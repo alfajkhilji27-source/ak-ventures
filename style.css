@@ -2541,3 +2541,49 @@ color:#cfcfcf;
 line-height:1.7;
 
 }
+/* ======================================================
+   FINANCE DIVISION
+====================================================== */
+
+.finance-hero{
+
+position:relative;
+width:100%;
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.finance-hero .division-tag{
+
+background:#d4af37;
+
+}
+
+.finance-hero .hero-btn{
+
+background:#d4af37;
+color:#000;
+
+}
+
+.finance-hero .hero-btn:hover{
+
+background:#f5cf58;
+
+}
+
+
+
+
