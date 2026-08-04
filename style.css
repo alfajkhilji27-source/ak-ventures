@@ -2161,6 +2161,8 @@ display:none;
 .hero-overlay{
     width:100%;
     padding:40px;
+    position:relative;
+    z-index:1;
 }
 
 .division-nav{
@@ -2944,5 +2946,19 @@ background:#ab47bc;
 
 }
 
+.division-bar{
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+    z-index:99999;
+}
 
+.healthcare-hero{
+    z-index:1;
+}
+
+.division-nav{
+    position:relative;
+    z-index:2;
+}
 
