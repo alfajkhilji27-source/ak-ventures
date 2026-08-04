@@ -91,24 +91,24 @@ nav.classList.remove("scrolled");
 /* Mobile Menu */
 
 const menu=document.getElementById("menu-toggle");
+const navMenu=document.getElementById("nav-menu");
 
-const nav=document.getElementById("nav-menu");
+if(menu && navMenu){
 
 menu.addEventListener("click",()=>{
 
-nav.classList.toggle("active");
+navMenu.classList.toggle("active");
 
-if(nav.classList.contains("active")){
-
+if(navMenu.classList.contains("active")){
 menu.innerHTML="✕";
-
 }else{
-
 menu.innerHTML="☰";
-
 }
 
 });
+
+}
+
 /* ==========================================================
                     SCROLL REVEAL
 ========================================================== */
