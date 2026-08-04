@@ -3201,5 +3201,46 @@ color:#111;
 background:#f5d56a;
 
 }
+/* ==========================================
+   DISCLAIMER HERO
+========================================== */
 
+.disclaimer-hero{
+
+position:relative;
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:
+linear-gradient(rgba(20,10,0,.75),rgba(0,0,0,.82)),
+url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+}
+
+.disclaimer-hero .division-tag{
+
+background:#c62828;
+color:#fff;
+
+}
+
+.disclaimer-hero .hero-btn{
+
+background:#d4af37;
+color:#111;
+
+}
+
+.disclaimer-hero .hero-btn:hover{
+
+background:#f5d56a;
+
+}
 
