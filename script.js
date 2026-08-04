@@ -65,7 +65,11 @@ const height=document.documentElement.scrollHeight-document.documentElement.clie
 
 const progress=(scrollTop/height)*100;
 
-document.getElementById("progress-bar").style.width=progress+"%";
+const progress=document.getElementById("progress-bar");
+
+if(progress){
+progress.style.width=percent+"%";
+}
 
 });
 /* Navbar Scroll Effect */
