@@ -87,6 +87,7 @@ nav.classList.remove("scrolled");
 }
 
 });
+}
 /* Mobile Menu */
 
 const menu=document.getElementById("menu-toggle");
