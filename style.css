@@ -2829,7 +2829,69 @@ color:#fff;
 background:#42a5f5;
 
 }
+/* ==========================================
+   AK FOOTER
+========================================== */
 
+.ak-footer{
+
+background:#050505;
+padding:70px 8%;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.ak-footer h2{
+
+color:#fff;
+margin-bottom:15px;
+
+}
+
+.ak-footer p{
+
+color:#aaa;
+line-height:1.8;
+
+}
+
+.footer-links{
+
+margin:35px 0;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.footer-links a{
+
+color:#fff;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#d4af37;
+
+}
+
+.copyright{
+
+margin-top:30px;
+font-size:14px;
+
+}
 
 
 
