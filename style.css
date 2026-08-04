@@ -2174,11 +2174,10 @@ margin-bottom:80px;
 }
 
 .division-nav h2{
-
-color:#fff;
-font-size:30px;
-letter-spacing:2px;
-
+    color:#fff;
+    font-size:30px;
+    letter-spacing:2px;
+    white-space:nowrap;
 }
 
 .back-btn{
