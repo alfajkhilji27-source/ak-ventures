@@ -426,3 +426,18 @@ botReply(btn.innerText);
 };
 
 });
+/* ===============================
+   Premium Loading Screen
+================================ */
+
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    if (!loader) return;
+
+    setTimeout(() => {
+        loader.classList.add("hide");
+    }, 2800);
+
+});
