@@ -136,16 +136,7 @@ background-position:center;
 background-repeat:no-repeat;
 background-attachment:fixed;
 }
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:
-radial-gradient(circle at top right,rgba(212,175,55,.22),transparent 35%),
-radial-gradient(circle at bottom left,rgba(37,99,235,.14),transparent 40%);
-pointer-events:none;
-z-index:1;
-}
+
 
 .hero-content,
 .hero-badge{
