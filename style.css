@@ -3234,4 +3234,75 @@ color:#111;
 background:#f5d56a;
 
 }
+/* ===============================
+   Premium Loading Screen
+================================ */
 
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#050505;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999999;
+    transition:opacity .8s ease, visibility .8s ease;
+}
+
+#loader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-content{
+    text-align:center;
+    width:90%;
+    max-width:450px;
+}
+
+.loader-content h1{
+    font-size:52px;
+    color:#ffffff;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.loader-content h1 span{
+    color:#d4af37;
+    text-shadow:0 0 15px rgba(212,175,55,.8);
+}
+
+.loader-content p{
+    color:#cfcfcf;
+    margin-bottom:35px;
+    font-size:16px;
+    letter-spacing:1px;
+}
+
+.loader-bar{
+    width:100%;
+    height:8px;
+    background:#222;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.loader-fill{
+    width:0%;
+    height:100%;
+    background:linear-gradient(90deg,#8b6914,#d4af37,#ffd700);
+    animation:loading 2.5s linear forwards;
+}
+
+@keyframes loading{
+    from{
+        width:0%;
+    }
+    to{
+        width:100%;
+    }
+}
