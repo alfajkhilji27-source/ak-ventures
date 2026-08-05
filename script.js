@@ -63,12 +63,12 @@ const scrollTop=document.documentElement.scrollTop;
 
 const height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
 
-const progress=(scrollTop/height)*100;
+const percent = (scrollTop / height) * 100;
 
-const progress=document.getElementById("progress-bar");
+const progress = document.getElementById("progress-bar");
 
-if(progress){
-progress.style.width=percent+"%";
+if (progress) {
+    progress.style.width = percent + "%";
 }
 
 });
