@@ -457,5 +457,25 @@ outline.style.left=e.clientX+"px";
 outline.style.top=e.clientY+"px";
 
 });
+window.addEventListener("load",()=>{
 
+setTimeout(()=>{
+
+const loader=document.getElementById("loader");
+
+if(loader){
+
+loader.style.opacity="0";
+
+setTimeout(()=>{
+
+loader.remove();
+
+},600);
+
+}
+
+},1800);
+
+});
 
